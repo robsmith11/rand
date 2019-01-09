@@ -18,7 +18,7 @@ use rand_core::{SeedableRng, RngCore, Error};
 /// The algorithm used here is translated from [the `xoshiro256starstar.c`
 /// reference source code](http://xoshiro.di.unimi.it/xoshiro256starstar.c) by
 /// David Blackman and Sebastiano Vigna.
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Copy)]
 pub struct Xoshiro256StarStar {
     s: [u64; 4],
 }
